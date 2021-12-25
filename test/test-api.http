@@ -1,0 +1,23 @@
+GET http://localhost:3000/
+###
+GET http://localhost:3000/tasks
+###
+GET http://localhost:3000/tasks/21a328b8-7dc5-4c27-80b4-5a0dca9b51b7
+###
+POST  http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "task 2.1"
+}
+###
+PATCH  http://localhost:3000/tasks/21a328b8-7dc5-4c27-80b4-5a0dca9b51b7
+Content-Type: application/json
+
+{
+    "title": "task 1.2"
+}
+
+###
+DELETE http://localhost:3000/tasks/d17a01ee-3c30-4b9a-b684-327c170bbe4c
+
